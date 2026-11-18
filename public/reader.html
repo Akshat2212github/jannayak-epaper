@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>जननायक ई-पेपर | Jannayak e-paper</title>
+<meta name="description" content="जननायक ई-पेपर पढ़ें। Read the Jannayak e-paper.">
+<meta name="theme-color" content="#1A1713">
+<meta property="og:type" content="article">
+<meta property="og:title" content="जननायक ई-पेपर | Jannayak e-paper">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@600;800&family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-reader">
+<a class="skip" href="#stage" data-i18n="skip">मुख्य सामग्री पर जाएँ</a>
+
+<div class="rd">
+  <header class="rd-header">
+    <h1 id="rdTitle" class="sr-only"></h1>
+    <div class="rd-brandbar">
+      <a class="rd-back" href="index.html"><span data-icon="left"></span><span data-i18n="back">मुख्य पृष्ठ</span></a>
+      <div class="rd-mark" aria-hidden="true" data-i18n="brand">जननायक</div>
+    </div>
+    <nav id="cityTabs" class="rd-tabs" aria-label="संस्करण चुनें" data-i18n-attr="aria-label:cities_label"></nav>
+    <div class="rd-datebar">
+      <span id="prevEd"></span>
+      <strong id="edDate" class="rd-date"></strong>
+      <span id="nextEd"></span>
+    </div>
+    <div class="lang-switch" role="group" aria-label="भाषा / Language">
+      <button type="button" data-lang="hi" aria-pressed="true">हिन्दी</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <div class="rd-toolbar" role="toolbar" aria-label="ई-पेपर टूल" data-i18n-attr="aria-label:toolbar">
+    <div class="rd-group">
+      <button type="button" id="prevPage" class="rd-iconbtn" aria-label="पिछला पृष्ठ" data-i18n-attr="aria-label:prev_page"><span data-icon="left" data-size="22"></span></button>
+      <span id="pageLabel" class="rd-label" aria-live="polite"></span>
+      <button type="button" id="nextPage" class="rd-iconbtn" aria-label="अगला पृष्ठ" data-i18n-attr="aria-label:next_page"><span data-icon="right" data-size="22"></span></button>
+    </div>
+    <div class="rd-group">
+      <button type="button" id="zoomOut" class="rd-iconbtn" aria-label="ज़ूम घटाएँ" data-i18n-attr="aria-label:zoom_out"><span data-icon="minus" data-size="22"></span></button>
+      <span id="zoomLabel" class="rd-label rd-zoomlabel">100%</span>
+      <button type="button" id="zoomIn" class="rd-iconbtn" aria-label="ज़ूम बढ़ाएँ" data-i18n-attr="aria-label:zoom_in"><span data-icon="plus" data-size="22"></span></button>
+    </div>
+    <div class="rd-spacer"></div>
+    <div class="rd-actions">
+      <a id="dlBtn" class="btn btn-primary btn-sm" href="#"><span data-icon="download"></span><span data-i18n="download_pdf">PDF डाउनलोड</span></a>
+      <a id="waBtn" class="btn btn-secondary btn-sm" href="#" target="_blank" rel="noopener"><span data-icon="share"></span><span data-i18n="whatsapp">WhatsApp पर भेजें</span></a>
+      <a id="openBtn" class="btn btn-secondary btn-sm" href="#" target="_blank" rel="noopener"><span data-icon="external"></span><span data-i18n="open_pdf">PDF खोलें</span></a>
+      <button type="button" id="fsBtn" class="btn btn-secondary btn-sm rd-fs"><span data-icon="full"></span><span id="fsLabel" data-i18n="fullscreen">पूर्ण स्क्रीन</span></button>
+    </div>
+  </div>
+
+  <aside id="thumbs" class="rd-thumbs" aria-label="सभी पृष्ठ" data-i18n-attr="aria-label:all_pages"></aside>
+
+  <section id="stage" class="rd-stage" tabindex="0" aria-label="पृष्ठ दर्शक" data-i18n-attr="aria-label:viewer">
+    <div id="pageWrap" class="rd-page"></div>
+    <div id="stageMsg" class="rd-msg" role="status" hidden></div>
+  </section>
+</div>
+
+<noscript><p class="noscript" data-i18n="noscript">इस साइट को चलाने के लिए JavaScript चालू करें। / Please turn on JavaScript to use this site.</p></noscript>
+
+<script src="config.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/reader.js"></script>
+</body>
+</html>

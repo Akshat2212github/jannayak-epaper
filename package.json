@@ -1,0 +1,14 @@
+{
+  "name": "jannayak-epaper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jannayak News e-paper website (plain HTML/CSS/JS, deploys to Vercel as a static site)",
+  "scripts": {
+    "build": "node scripts/build-manifest.js",
+    "dev": "node scripts/dev-server.js",
+    "start": "node scripts/dev-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

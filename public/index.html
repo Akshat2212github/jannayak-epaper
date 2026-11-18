@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>जननायक ई-पेपर | Jannayak e-paper</title>
+<meta name="description" content="जननायक ई-पेपर — कोटा, जयपुर और चित्तौड़गढ़ संस्करण। Jannayak daily e-paper: Kota, Jaipur and Chittorgarh editions.">
+<meta name="theme-color" content="#1A1713">
+<meta property="og:type" content="website">
+<meta property="og:title" content="जननायक ई-पेपर | Jannayak e-paper">
+<meta property="og:description" content="कोटा, जयपुर और चित्तौड़गढ़ संस्करण रोज़ पढ़ें। Read the Kota, Jaipur and Chittorgarh editions daily.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@600;800&family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-home">
+<a class="skip" href="#main" data-i18n="skip">मुख्य सामग्री पर जाएँ</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="langbar-label" data-i18n="lang_label">भाषा</span>
+    <div class="lang-switch" role="group" aria-label="भाषा / Language">
+      <button type="button" data-lang="hi" aria-pressed="true">हिन्दी</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="nameplate-box">
+      <h1 class="nameplate"><a href="index.html" data-i18n="brand">जननायक</a></h1>
+    </div>
+    <div class="strap">
+      <span id="strapDate"></span>
+      <span id="strapCities">कोटा · जयपुर · चित्तौड़गढ़</span>
+      <span data-i18n="digital">डिजिटल संस्करण</span>
+    </div>
+    <nav class="mainnav" aria-label="मुख्य मेनू" data-i18n-attr="aria-label:nav_label">
+      <a href="#today" class="is-active" data-i18n="nav_epaper">ई-पेपर</a>
+      <a href="#archive" data-i18n="nav_archive">पुराने अंक</a>
+      <a href="#contact" data-i18n="nav_contact">संपर्क करें</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="today" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker" data-i18n="latest_kicker">ताज़ा ई-पेपर</span>
+        <h2 class="sec-title" data-i18n="latest_title">अपने शहर का ताज़ा अंक चुनें</h2>
+      </div>
+      <div id="editionGrid" class="edition-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="archive" class="section archive">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker" data-i18n="archive_kicker">पुराने अंक</span>
+        <h2 class="sec-title" data-i18n="archive_title">तारीख चुनें, उस दिन के संस्करण देखें</h2>
+      </div>
+      <div id="archiveBody" class="archive-layout"></div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-mark" data-i18n="brand">जननायक</div>
+        <div id="footerEditions" class="muted-light"></div>
+      </div>
+      <div id="offices" class="offices"></div>
+    </div>
+    <div class="footer-bottom"><span id="rights"></span></div>
+  </div>
+</footer>
+
+<noscript><p class="noscript" data-i18n="noscript">इस साइट को चलाने के लिए JavaScript चालू करें। / Please turn on JavaScript to use this site.</p></noscript>
+
+<script src="config.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>
